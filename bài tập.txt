@@ -1,0 +1,32 @@
+Nhiệm vụ 1:
+- Keep Informed 
++ Khách hàng ăn tại quán -> Đặt bàn -> gọi món -> theo dõi món
++ Nhân viên phục vụ -> Nhận bàn -> nhận món -> phục vụ khách hàng
+
+Nhiệm vụ 2:
+- AS-IS:
++ Khách hàng đến quán ăn -> hỏi bàn -> nhân viên kiểm tra -> xác nhận bàn 
+
+-> Vấn đề: Tốn công và thời gian , dễ nhầm lần các bàn
+
+- TO-BE:
++ Khách hàng lên web -> xem bàn trống -> đặt bàn -> nhân viên xác nhận
+
+Nhiệm vụ 3:
+- Vai trò khách hàng:
++ Tôi muốn xem bàn trống trên website để tránh việc không có bàn hoặc đợi quá lâu khi tới quán
+
+- Vai trò phục vụ:
++ Tôi muốn nhận thông tin đặt bàn và món từ khách hàng nhanh chống ít sai sót nhất
+
+Nhiệm vụ 4: 
+
+NFR 1 – Thời gian phản hồi
+
+NFR-01: Trong khung giờ cao điểm 12h trưa và 7h tối, khi có tối đa 500 người dùng đồng thời, hệ thống phải trả kết quả cho các thao tác xem bàn trống, đặt bàn và gọi món trong ≤ 2 giây đối với ít nhất 95% request.
+
+Chỉ số đo: Response Time ≤ 2 giây / 95% request.
+
+ NFR 2 – Khả năng xử lý đồng thời
+
+NFR-02: Trong khung giờ cao điểm 12h trưa và 7h tối, hệ thống phải duy trì khả năng xử lý tối thiểu 100 request/giây mà không xảy ra lỗi hệ thống vượt quá 1% tổng số request.
