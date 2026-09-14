@@ -1,0 +1,30 @@
+<mxfile host="app.diagrams.net" modified="2026-09-14T00:00:00.000Z" agent="Mozilla/5.0" version="24.7.17">
+  <diagram id="locker-alt" name="Sequence Diagram - Locker">
+    <mxGraphModel dx="1400" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Sequence Diagram - Rikkei Logistics Smart Locker" style="text;fontSize=22;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="360" y="20" width="680" height="40" as="geometry"/></mxCell>
+        <mxCell id="actor" value="Khách nhận hàng" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1"><mxGeometry x="90" y="90" width="100" height="160" as="geometry"/></mxCell>
+        <mxCell id="lt" value="LockerTerminal" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="360" y="90" width="180" height="50" as="geometry"/></mxCell>
+        <mxCell id="ps" value="PackageService" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="800" y="90" width="180" height="50" as="geometry"/></mxCell>
+        <mxCell id="ll1" value="" style="dashed=1;strokeWidth=2;html=1;" vertex="1" parent="1"><mxGeometry x="135" y="250" width="1" height="610" as="geometry"/></mxCell>
+        <mxCell id="ll2" value="" style="dashed=1;strokeWidth=2;html=1;" vertex="1" parent="1"><mxGeometry x="450" y="140" width="1" height="720" as="geometry"/></mxCell>
+        <mxCell id="ll3" value="" style="dashed=1;strokeWidth=2;html=1;" vertex="1" parent="1"><mxGeometry x="890" y="140" width="1" height="720" as="geometry"/></mxCell>
+        <mxCell id="act1" value="" style="fillColor=#eeeeee;strokeColor=#333333;" vertex="1" parent="1"><mxGeometry x="440" y="300" width="20" height="510" as="geometry"/></mxCell>
+        <mxCell id="act2" value="" style="fillColor=#eeeeee;strokeColor=#333333;" vertex="1" parent="1"><mxGeometry x="880" y="420" width="20" height="300" as="geometry"/></mxCell>
+        <mxCell id="m1" value="Nhập mã OTP&lt;br&gt;Interaction" style="endArrow=block;html=1;fontSize=14;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/><mxPoint x="155" y="315" as="sourcePoint"/><mxPoint x="440" y="315" as="targetPoint"/></mxCell>
+        <mxCell id="m2" value="verify_otp()&lt;br&gt;&lt;i&gt;Sync&lt;/i&gt;" style="endArrow=block;html=1;fontSize=14;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/><mxPoint x="460" y="410" as="sourcePoint"/><mxPoint x="880" y="410" as="targetPoint"/></mxCell>
+        <mxCell id="alt" value="alt" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=12;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="300" y="460" width="760" height="310" as="geometry"/></mxCell>
+        <mxCell id="guard1" value="[OTP đúng]" style="text;html=1;fontStyle=1;align=left;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="350" y="470" width="120" height="30" as="geometry"/></mxCell>
+        <mxCell id="divider" value="else" style="text;html=1;fontStyle=1;align=left;verticalAlign=middle;borderColor=none;" vertex="1" parent="1"><mxGeometry x="310" y="605" width="150" height="30" as="geometry"/></mxCell>
+        <mxCell id="guard2" value="[OTP sai]" style="text;html=1;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="350" y="605" width="120" height="30" as="geometry"/></mxCell>
+        <mxCell id="sep" value="" style="strokeWidth=2;" edge="1" parent="alt"><mxGeometry relative="1" as="geometry"/><mxPoint x="0" y="155" as="sourcePoint"/><mxPoint x="760" y="155" as="targetPoint"/></mxCell>
+        <mxCell id="m3a" value="Kết quả hợp lệ&lt;br&gt;&lt;i&gt;Return&lt;/i&gt;" style="dashed=1;endArrow=open;html=1;fontSize=14;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/><mxPoint x="880" y="530" as="sourcePoint"/><mxPoint x="460" y="530" as="targetPoint"/></mxCell>
+        <mxCell id="m4a" value="&quot;Mở tủ thành công&quot;&lt;br&gt;Thông báo" style="endArrow=block;html=1;fontSize=14;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/><mxPoint x="440" y="570" as="sourcePoint"/><mxPoint x="155" y="570" as="targetPoint"/></mxCell>
+        <mxCell id="m3b" value="Kết quả không hợp lệ&lt;br&gt;&lt;i&gt;Return&lt;/i&gt;" style="dashed=1;endArrow=open;html=1;fontSize=14;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/><mxPoint x="880" y="680" as="sourcePoint"/><mxPoint x="460" y="680" as="targetPoint"/></mxCell>
+        <mxCell id="m4b" value="&quot;Mã OTP không đúng, vui lòng thử lại&quot;&lt;br&gt;Thông báo" style="endArrow=block;html=1;fontSize=13;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"/><mxPoint x="440" y="730" as="sourcePoint"/><mxPoint x="155" y="730" as="targetPoint"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
