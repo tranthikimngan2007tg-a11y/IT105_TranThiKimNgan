@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net" modified="2026-09-15T13:50:00.000Z" agent="Mozilla/5.0" version="24.7.17">
+  <diagram id="rikkeibank-payment" name="RikkeiBank Payment Sequence">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Lifeline headers -->
+        <mxCell id="customer" value="Khách hàng\n(Actor)" style="shape=umlLifeline;perimeter=lifelinePerimeter;rounded=0;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="60" width="150" height="600" as="geometry"/>
+        </mxCell>
+        <mxCell id="gateway" value="Cổng Thanh Toán\n(Object)" style="shape=umlLifeline;perimeter=lifelinePerimeter;rounded=0;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="180" height="600" as="geometry"/>
+        </mxCell>
+        <mxCell id="bank" value="Ngân Hàng Lõi\n(Object)" style="shape=umlLifeline;perimeter=lifelinePerimeter;rounded=0;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="60" width="170" height="600" as="geometry"/>
+        </mxCell>
+        <mxCell id="email" value="EmailServer\n(Object)" style="shape=umlLifeline;perimeter=lifelinePerimeter;rounded=0;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="60" width="160" height="600" as="geometry"/>
+        </mxCell>
+
+        <!-- Activation bars -->
+        <mxCell id="act_customer" value="" style="fillColor=#d9d9d9;strokeColor=#000000;" vertex="1" parent="customer">
+          <mxGeometry x="70" y="75" width="10" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="act_gateway1" value="" style="fillColor=#d9d9d9;strokeColor=#000000;" vertex="1" parent="gateway">
+          <mxGeometry x="85" y="75" width="10" height="275" as="geometry"/>
+        </mxCell>
+        <mxCell id="act_bank" value="" style="fillColor=#d9d9d9;strokeColor=#000000;" vertex="1" parent="bank">
+          <mxGeometry x="80" y="155" width="10" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="act_gateway2" value="" style="fillColor=#d9d9d9;strokeColor=#000000;" vertex="1" parent="gateway">
+          <mxGeometry x="105" y="155" width="10" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="act_email" value="" style="fillColor=#d9d9d9;strokeColor=#000000;" vertex="1" parent="email">
+          <mxGeometry x="75" y="430" width="10" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 1 Sync -->
+        <mxCell id="m1" value="nhập thẻ tín dụng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="customer" target="gateway">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="235" y="150"/><mxPoint x="385" y="150"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="m1label" value="Sync" style="text;html=1;align=center;verticalAlign=middle;fontStyle=2;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="252" y="130" width="55" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 2 Self -->
+        <mxCell id="m2" value="checkCardFormat()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;loopDirection=south;" edge="1" parent="gateway" source="gateway" target="gateway">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="115" y="205"/><mxPoint x="145" y="205"/><mxPoint x="145" y="230"/><mxPoint x="115" y="230"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="m2label" value="Self" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontColor=#555555;" vertex="1" parent="gateway">
+          <mxGeometry x="118" y="175" width="55" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 3 Sync -->
+        <mxCell id="m3" value="processPayment()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="gateway" target="bank">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="415" y="280"/><mxPoint x="645" y="280"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="m3label" value="Sync" style="text;html=1;align=center;verticalAlign=middle;fontStyle=2;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="475" y="260" width="55" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 4 Return -->
+        <mxCell id="m4" value="kết quả giao dịch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="bank" target="gateway">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="645" y="330"/><mxPoint x="415" y="330"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="m4label" value="Return" style="text;html=1;align=center;verticalAlign=middle;fontStyle=2;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="475" y="310" width="60" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 5 Return -->
+        <mxCell id="m5" value="hiển thị thành công" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="gateway" target="customer">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="385" y="375"/><mxPoint x="155" y="375"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="m5label" value="Return" style="text;html=1;align=center;verticalAlign=middle;fontStyle=2;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="235" y="355" width="60" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 6 Async -->
+        <mxCell id="m6" value="sendReceiptEmail()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="gateway" target="email">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="415" y="455"/><mxPoint x="900" y="455"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="m6label" value="Async" style="text;html=1;align=center;verticalAlign=middle;fontStyle=2;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="650" y="435" width="60" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Notes -->
+        <mxCell id="note" value="Đã sửa 2 lỗi: Bước 2 = Self; Bước 6 = Async, không có Return tự động." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="700" width="600" height="70" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
