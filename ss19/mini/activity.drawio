@@ -1,0 +1,99 @@
+<mxfile host="Electron">
+  <diagram name="Trang-1" id="m02_YSPoQ3y_ZiEvYY7U">
+    <mxGraphModel dx="975" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MypavryGS8d2uUFt4dQ8-1" parent="1" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="370" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-2" edge="1" parent="1" source="MypavryGS8d2uUFt4dQ8-1" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MypavryGS8d2uUFt4dQ8-8" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-6" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Đủ hàng?" vertex="1">
+          <mxGeometry height="80" width="80" x="600" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Xác nhận giỏ hàng và bấm &quot;Đặt hàng&quot;" vertex="1">
+          <mxGeometry height="60" width="120" x="325" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Kiểm tra số lượng tồn kho" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Thông báo hết hàng" vertex="1">
+          <mxGeometry height="60" width="120" x="430" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Nhập mã giảm giá (nếu có)" vertex="1">
+          <mxGeometry height="60" width="120" x="730" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Xác nhận đặt hàng" vertex="1">
+          <mxGeometry height="60" width="120" x="720" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Tạo đơn hàng" vertex="1">
+          <mxGeometry height="60" width="120" x="720" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Thông báo đặt hàng thành công" vertex="1">
+          <mxGeometry height="50" width="120" x="555" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-15" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="445" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-16" edge="1" parent="1" source="MypavryGS8d2uUFt4dQ8-8" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="MypavryGS8d2uUFt4dQ8-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-17" edge="1" parent="1" source="MypavryGS8d2uUFt4dQ8-9" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MypavryGS8d2uUFt4dQ8-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-18" edge="1" parent="1" source="MypavryGS8d2uUFt4dQ8-6" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="MypavryGS8d2uUFt4dQ8-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-19" edge="1" parent="1" source="MypavryGS8d2uUFt4dQ8-6" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="MypavryGS8d2uUFt4dQ8-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-20" edge="1" parent="1" source="MypavryGS8d2uUFt4dQ8-11" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.589;entryY=-0.052;entryDx=0;entryDy=0;entryPerimeter=0;" target="MypavryGS8d2uUFt4dQ8-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-21" edge="1" parent="1" source="MypavryGS8d2uUFt4dQ8-12" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MypavryGS8d2uUFt4dQ8-13" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-22" edge="1" parent="1" source="MypavryGS8d2uUFt4dQ8-13" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="MypavryGS8d2uUFt4dQ8-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-23" edge="1" parent="1" source="MypavryGS8d2uUFt4dQ8-14" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="MypavryGS8d2uUFt4dQ8-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MypavryGS8d2uUFt4dQ8-24" edge="1" parent="1" source="MypavryGS8d2uUFt4dQ8-10" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MypavryGS8d2uUFt4dQ8-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
